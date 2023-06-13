@@ -1,0 +1,61 @@
+.HeroSection {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* background: url("../assets/bg_me.jpg") center; */
+  background: radial-gradient(
+    circle at 70%,
+    #725f72 0%,
+    #36363d 25%,
+    #1b1818 50%,
+    #000000 100%
+  );
+  color: white;
+}
+
+.title {
+  position: absolute;
+  left: 50px;
+  align-self: center;
+  z-index: 2;
+}
+
+.title button {
+  margin-top: 20px;
+  padding: 15px;
+  width: 200px;
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.title button:hover {
+  background-color: white;
+  color: black;
+  border-color: transparent;
+  transition: all 800ms ease;
+}
+
+.clip {
+  width: 1400px;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  /* transition: width 300ms ease; */
+  /* cursor: pointer; */
+  z-index: 1;
+}
+
+/* .clip:hover {
+  width: 1410px;
+} */
+
+.scroll {
+  margin-bottom: 30px;
+  position: absolute;
+  align-self: flex-end;
+}
