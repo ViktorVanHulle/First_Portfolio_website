@@ -1,0 +1,13 @@
+.Root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(
+    circle at 70%,
+    #725f72 0%,
+    #36363d 25%,
+    #1b1818 50%,
+    #000000 100%
+  );
+  color: white;
+}

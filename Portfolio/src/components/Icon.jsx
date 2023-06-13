@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export const Icon = ({ name, color, size, strokeWidth }) => {
   const LucideIcon = icons[name];
 
-  return <LucideIcon color={color} size={size} stroke-width={strokeWidth} />;
+  return <LucideIcon color={color} size={size} strokeWidth={strokeWidth} />;
 };
 
 Icon.propTypes = {

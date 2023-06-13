@@ -1,0 +1,28 @@
+.HeroSection {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  position: absolute;
+  left: 50px;
+  align-self: center;
+  z-index: 2;
+}
+
+.title h1 {
+  width: 650px;
+  min-height: 180px;
+  line-height: 60px;
+}
+
+.title button {
+  min-width: 200px;
+}
+
+.clip {
+  width: 80%;
+  position: fixed;
+  right: -10%;
+  bottom: 0;
+}

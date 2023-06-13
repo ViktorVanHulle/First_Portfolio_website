@@ -1,6 +1,7 @@
 import React from "react";
-import style from "../style/HeroSection.module.css";
+import style from "../style/hero-section.module.css";
 import { clipsData } from "../data/clips";
+import Pagination from "./Pagination";
 
 export default function HeroSection() {
   const [index, setIndex] = React.useState(0);
@@ -13,19 +14,28 @@ export default function HeroSection() {
     }
   };
 
+  const nextScene = () => {
+    console.log("next scene");
+  };
+
   return (
     <div className={style.HeroSection}>
       <div className={style.title}>
         <h1>{currClip.text}</h1>
-        <button onClick={() => nextClip()}>
-          {index === 0 ? "start" : "continue"}
+        <button
+          onClick={() =>
+            index === clipsData.length - 1 ? nextScene() : nextClip()
+          }
+        >
+          {index === 0
+            ? "start"
+            : index === clipsData.length - 1
+            ? "my work style"
+            : "continue"}
         </button>
       </div>
       <img className={style.clip} src={currClip.src} />
-      <div className={style.scroll}>
-        <small>Scroll down to see my development journey</small>
-        <p>[SCROLL ANIMATION SVG]</p>
-      </div>
+      <Pagination/>
     </div>
   );
 }

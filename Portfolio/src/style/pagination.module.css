@@ -1,0 +1,17 @@
+.Pagination {
+  margin-bottom: 30px;
+  position: absolute;
+  display: flex;
+  align-self: flex-end;
+  gap: 20px;
+}
+
+.Pagination div {
+  border: 2px solid white;
+  width: 25px;
+  height: 25px;
+}
+
+.activePage {
+  background-color: white;
+}
