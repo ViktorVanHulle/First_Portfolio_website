@@ -12,25 +12,33 @@ export default function Header() {
       </Link>
       <div className={style.navMenu}>
         <Link
-          className={location.pathname === "/aboutme" ? style.activeLink : undefined}
+          className={
+            location.pathname === "/aboutme" ? style.activeLink : undefined
+          }
           to="aboutme"
         >
           about
         </Link>
         <Link
-          className={location.pathname === "/contactme" ? style.activeLink : undefined}
+          className={
+            location.pathname === "/contactme" ? style.activeLink : undefined
+          }
           to="contactme"
         >
           contact
         </Link>
         <Link
-          className={location.pathname === "/clients" ? style.activeLink : undefined}
+          className={
+            location.pathname === "/clients" ? style.activeLink : undefined
+          }
           to="clients"
         >
           clients
         </Link>
         <Link
-          className={location.pathname === "/blog" ? style.activeLink : undefined}
+          className={
+            location.pathname === "/blog" ? style.activeLink : undefined
+          }
           to="blog"
         >
           blog

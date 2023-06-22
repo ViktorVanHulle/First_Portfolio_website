@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// Pages
 import Root from "./routes/root";
 import ErrorPage from "./pages/error-page.jsx";
 import AboutMePage from "./pages/about-me-page";
 import LandingPage from "./pages/landing-page";
+// Style
 import "./style/reset.module.css";
 import "./style/global.module.css";
 
@@ -15,7 +17,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "",
+        index: true,
         element: <LandingPage />,
       },
       {
@@ -32,6 +34,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );

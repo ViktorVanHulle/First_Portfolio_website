@@ -1,7 +1,6 @@
 import React from "react";
 import style from "../style/hero-section.module.css";
 import { clipsData } from "../data/clips";
-import Pagination from "./Pagination";
 
 export default function HeroSection() {
   const [index, setIndex] = React.useState(0);
@@ -35,7 +34,6 @@ export default function HeroSection() {
         </button>
       </div>
       <img className={style.clip} src={currClip.src} />
-      <Pagination/>
     </div>
   );
 }
